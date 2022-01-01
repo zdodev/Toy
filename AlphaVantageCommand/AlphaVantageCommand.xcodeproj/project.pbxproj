@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		CFC3CE1D27803CE0005314AA /* AlphaVantageCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlphaVantageCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC3CE2027803CE0005314AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CFC3CE2727803E8B005314AA /* apiKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apiKey.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC3CE2027803CE0005314AA /* main.swift */,
+				CFC3CE2727803E8B005314AA /* apiKey.plist */,
 			);
 			path = AlphaVantageCommand;
 			sourceTree = "<group>";
