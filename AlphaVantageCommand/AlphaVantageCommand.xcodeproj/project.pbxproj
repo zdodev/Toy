@@ -10,7 +10,7 @@
 		84F9ADFA283B24B30022BA2D /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9ADF9283B24B30022BA2D /* APICall.swift */; };
 		84F9ADFC283B26BA0022BA2D /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9ADFB283B26BA0022BA2D /* WebRepository.swift */; };
 		84F9ADFE283B2CC70022BA2D /* AlphaVantageWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9ADFD283B2CC70022BA2D /* AlphaVantageWebRepository.swift */; };
-		84F9AE01283B2DA90022BA2D /* Monthly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AE00283B2DA90022BA2D /* Monthly.swift */; };
+		84F9AE01283B2DA90022BA2D /* MonthlyAdjustedTimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AE00283B2DA90022BA2D /* MonthlyAdjustedTimeSeries.swift */; };
 		CFC3CE2127803CE0005314AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3CE2027803CE0005314AA /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		84F9ADF9283B24B30022BA2D /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		84F9ADFB283B26BA0022BA2D /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		84F9ADFD283B2CC70022BA2D /* AlphaVantageWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaVantageWebRepository.swift; sourceTree = "<group>"; };
-		84F9AE00283B2DA90022BA2D /* Monthly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monthly.swift; sourceTree = "<group>"; };
+		84F9AE00283B2DA90022BA2D /* MonthlyAdjustedTimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyAdjustedTimeSeries.swift; sourceTree = "<group>"; };
 		CFC3CE1D27803CE0005314AA /* AlphaVantageCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlphaVantageCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC3CE2027803CE0005314AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +49,7 @@
 		84F9ADFF283B2D440022BA2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84F9AE00283B2DA90022BA2D /* Monthly.swift */,
+				84F9AE00283B2DA90022BA2D /* MonthlyAdjustedTimeSeries.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F9ADFE283B2CC70022BA2D /* AlphaVantageWebRepository.swift in Sources */,
-				84F9AE01283B2DA90022BA2D /* Monthly.swift in Sources */,
+				84F9AE01283B2DA90022BA2D /* MonthlyAdjustedTimeSeries.swift in Sources */,
 				84F9ADFA283B24B30022BA2D /* APICall.swift in Sources */,
 				CFC3CE2127803CE0005314AA /* main.swift in Sources */,
 				84F9ADFC283B26BA0022BA2D /* WebRepository.swift in Sources */,

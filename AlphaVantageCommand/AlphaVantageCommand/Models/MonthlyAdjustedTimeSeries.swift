@@ -1,8 +1,11 @@
-struct Monthly: Decodable {
+import Foundation
+struct MonthlyAdjustedTimeSeries: Decodable {
     let metaData: MetaData
+    let monthly: Monthly
     
     enum CodingKeys: String, CodingKey {
         case metaData = "Meta Data"
+        case monthly = "Monthly Adjusted Time Series"
     }
     
     struct MetaData: Decodable {
@@ -17,5 +20,9 @@ struct Monthly: Decodable {
             case lastRefreshed = "3. Last Refreshed"
             case timeZone = "4. Time Zone"
         }
+    }
+    
+    struct Monthly: Decodable {
+//        let data: Data
     }
 }

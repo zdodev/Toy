@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 protocol AlphaVantageWebRepository: WebRepository {
-    func loadDividends(_ ticker: Ticker) -> AnyPublisher<Monthly, Error>
+    func loadDividends(_ ticker: Ticker) -> AnyPublisher<MonthlyAdjustedTimeSeries, Error>
 }
 
 struct AlphaVantageWebService: AlphaVantageWebRepository {
@@ -14,7 +14,7 @@ struct AlphaVantageWebService: AlphaVantageWebRepository {
         self.baseURL = baseURL
     }
     
-    func loadDividends(_ ticker: Ticker) -> AnyPublisher<Monthly, Error> {
+    func loadDividends(_ ticker: Ticker) -> AnyPublisher<MonthlyAdjustedTimeSeries, Error> {
         call(endpoint: API.loadDividends)
     }
 }
