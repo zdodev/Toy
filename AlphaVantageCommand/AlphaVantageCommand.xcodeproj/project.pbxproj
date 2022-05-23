@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84F9ADFA283B24B30022BA2D /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9ADF9283B24B30022BA2D /* APICall.swift */; };
+		84F9ADFC283B26BA0022BA2D /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9ADFB283B26BA0022BA2D /* WebRepository.swift */; };
 		CFC3CE2127803CE0005314AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC3CE2027803CE0005314AA /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		84F9ADF9283B24B30022BA2D /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		84F9ADFB283B26BA0022BA2D /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		CFC3CE1D27803CE0005314AA /* AlphaVantageCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlphaVantageCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC3CE2027803CE0005314AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC3CE2027803CE0005314AA /* main.swift */,
+				84F9ADFB283B26BA0022BA2D /* WebRepository.swift */,
 				84F9ADF9283B24B30022BA2D /* APICall.swift */,
 			);
 			path = AlphaVantageCommand;
@@ -125,6 +128,7 @@
 			files = (
 				84F9ADFA283B24B30022BA2D /* APICall.swift in Sources */,
 				CFC3CE2127803CE0005314AA /* main.swift in Sources */,
+				84F9ADFC283B26BA0022BA2D /* WebRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
