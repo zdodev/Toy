@@ -15,21 +15,21 @@ struct AlphaVantageWebService: AlphaVantageWebRepository {
     }
     
     func loadDividends(_ ticker: Ticker) -> AnyPublisher<MonthlyAdjustedTimeSeries, Error> {
-        call(endpoint: API.loadDividends)
+        call(endpoint: API.loadDividends(ticker))
     }
 }
 
 extension AlphaVantageWebService {
     enum API {
-        case loadDividends
+        case loadDividends(String)
     }
 }
 
 extension AlphaVantageWebService.API: APICall {
     var path: String {
         switch self {
-        case .loadDividends:
-            return "/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=AAPL&apikey=WIN4ZCY6VUPIHEB9"
+        case .loadDividends(let ticker):
+            return "/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=\(ticker)&apikey=WIN4ZCY6VUPIHEB9"
         }
     }
     
