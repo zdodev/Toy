@@ -12,6 +12,9 @@ extension WebRepository {
             let request = try endpoint.urlRequest(baseURL: baseURL)
             return session
                 .dataTaskPublisher(for: request)
+                .requestJSON(httpCodes: httpsCode)
+        } catch let error {
+            return Fail<Value, Error>(error: error).eraseToAnyPublisher()
         }
     }
 }
