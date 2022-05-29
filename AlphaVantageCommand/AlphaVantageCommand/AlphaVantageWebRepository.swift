@@ -3,6 +3,7 @@ import Combine
 
 protocol AlphaVantageWebRepository: WebRepository {
     func loadDividends(_ ticker: Ticker) -> AnyPublisher<MonthlyAdjustedTimeSeries, Error>
+    func loadLatestPrice(_ ticker: Ticker) -> AnyPublisher<DailyPrice, Error>
 }
 
 struct AlphaVantageWebService: AlphaVantageWebRepository {
@@ -17,11 +18,16 @@ struct AlphaVantageWebService: AlphaVantageWebRepository {
     func loadDividends(_ ticker: Ticker) -> AnyPublisher<MonthlyAdjustedTimeSeries, Error> {
         call(endpoint: API.loadDividends(ticker))
     }
+    
+    func loadLatestPrice(_ ticker: Ticker) -> AnyPublisher<DailyPrice, Error> {
+        call(endpoint: API.loadLatestPrice(ticker))
+    }
 }
 
 extension AlphaVantageWebService {
     enum API {
         case loadDividends(String)
+        case loadLatestPrice(String)
     }
 }
 
@@ -30,14 +36,13 @@ extension AlphaVantageWebService.API: APICall {
         switch self {
         case .loadDividends(let ticker):
             return "/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=\(ticker)&apikey=WIN4ZCY6VUPIHEB9"
+        case .loadLatestPrice(let ticker):
+            return "/query?function=TIME_SERIES_DAILY&symbol=\(ticker)&apikey=WIN4ZCY6VUPIHEB9"
         }
     }
     
     var method: String {
-        switch self {
-        case .loadDividends:
-            return "GET"
-        }
+        "GET"
     }
     
     var headers: [String : String]? {
